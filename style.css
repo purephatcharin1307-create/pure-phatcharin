@@ -1,0 +1,33 @@
+body {
+        background-color: rgb(233, 233, 239);
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: auto;
+
+    }
+    .botomUP {
+        /* background-color: rgb(13, 110, 31); */
+        background: linear-gradient(rgb(42, 52, 26),rgb(192, 235, 118));
+        color: rgb(222, 233, 231);
+        font-size: 20px;
+        padding: 10px;
+        font-weight: bold;
+        border: none;
+        border-radius: 20px;
+    }
+
+    .botomUP:hover{
+        background: linear-gradient(rgb(183, 216, 16),rgb(221, 239, 163) );
+    }
+    #topdDown {
+        background: linear-gradient(rgb(34, 80, 207),rgb(69, 111, 183));
+        color: rgb(222, 233, 231);
+        font-size: 20px;
+        padding: 10px;
+        font-weight: bold;
+        border: none;
+        border-radius: 20px;
+
+    }
+    #topdDown:hover {
+        background: linear-gradient(rgb(37, 53, 221),rgb(134, 136, 227) );
+    }
