@@ -1,62 +1,426 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>pure</title>
-<link rel="stylesheet" href="style.css">
-<!-- Latest compiled and minified CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<!-- Latest compiled JavaScript -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Pure | My Portfolio</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="javascript:void(0)">Logo</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="mynavbar">
-      <ul class="navbar-nav me-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">about</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">contact</a>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control me-2" type="text" placeholder="Search">
-        <button class="btn btn-primary" type="button">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
-    <div class="container-fluid">
-        <img src="image/Hero Section Portfolio.jfif" alt="" width="100%">
-    </div>
-    <br><br>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-6">
-                <img src="image/Hero Section Portfolio.jfif" alt="" width="100%" class="rounded">
-            </div>
-            <div class="col-sm-6">
-                <h1>Hello This is My Portfolio</h1>
-                <p>This is a simple portfolio website built with HTML, CSS, and Bootstrap.</p>
-            </div>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+
+        <a class="navbar-brand" href="#home">
+            PURE<span>.</span>
+        </a>
+
+        <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">Portfolio</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+
+            </ul>
+
+            <a href="#contact" class="btn btn-main ms-lg-4">
+                Let's Talk
+            </a>
+
         </div>
-    
-    <!--  -->
-    <div class="container-fluid">
-    <footer class="bg-dark text-white text-center py-3">
-        <p>&copy; 2023 My Portfolio. All rights reserved.</p>
-    </footer>
     </div>
+</nav>
+
+
+<!-- Hero Section -->
+<section id="home" class="hero">
+
+    <div class="container">
+        <div class="row align-items-center">
+
+            <div class="col-lg-7 hero-text">
+
+                <p class="hero-subtitle">
+                    WELCOME TO MY PORTFOLIO
+                </p>
+
+                <h1>
+                    Hello, I'm <span>Pure</span>
+                </h1>
+
+                <h2>Web Designer & Developer</h2>
+
+                <p class="hero-description">
+                    I love creating beautiful websites,
+                    modern designs and amazing digital experiences.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#portfolio" class="btn btn-main">
+                        View My Work
+                    </a>
+
+                    <a href="#contact" class="btn btn-outline-light">
+                        Contact Me
+                    </a>
+                </div>
+
+                <div class="social-links">
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-facebook"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+                        <i class="bi bi-github"></i>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="col-lg-5 text-center">
+                <div class="hero-image">
+                    <img src="image/Hero Section Portfolio.jfif"
+                        alt="Pure Portfolio">
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</section>
+
+
+<!-- About Section -->
+<section id="about" class="section-padding">
+
+    <div class="container">
+
+        <div class="section-title">
+            <p>GET TO KNOW ME</p>
+            <h2>About <span>Me</span></h2>
+        </div>
+
+        <div class="row align-items-center g-5">
+
+            <div class="col-lg-5">
+                <div class="about-image">
+                    <img src="image/Hero Section Portfolio.jfif"
+                        alt="About Me">
+                </div>
+            </div>
+
+            <div class="col-lg-7">
+
+                <h3>Hello! I'm Pure</h3>
+
+                <p>
+                    I'm passionate about web design and development.
+                    I enjoy learning new technologies and creating
+                    websites that are beautiful, responsive and easy to use.
+                </p>
+
+                <p>
+                    My goal is to improve my skills and become
+                    a professional web developer.
+                </p>
+
+                <div class="row mt-4">
+
+                    <div class="col-6 mb-3">
+                        <strong>Name:</strong>
+                        <p>Pure</p>
+                    </div>
+
+                    <div class="col-6 mb-3">
+                        <strong>Profession:</strong>
+                        <p>Web Developer</p>
+                    </div>
+
+                    <div class="col-6 mb-3">
+                        <strong>Experience:</strong>
+                        <p>Learning & Creating</p>
+                    </div>
+
+                    <div class="col-6 mb-3">
+                        <strong>Email:</strong>
+                        <p>your@email.com</p>
+                    </div>
+
+                </div>
+
+                <a href="#contact" class="btn btn-main">
+                    Hire Me
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Skills Section -->
+<section id="skills" class="section-padding skills-section">
+
+    <div class="container">
+
+        <div class="section-title">
+            <p>WHAT I CAN DO</p>
+            <h2>My <span>Skills</span></h2>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-6">
+
+                <div class="skill-item">
+                    <div class="d-flex justify-content-between">
+                        <h5>HTML</h5>
+                        <span>90%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width:90%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="d-flex justify-content-between">
+                        <h5>CSS</h5>
+                        <span>85%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width:85%"></div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-6">
+
+                <div class="skill-item">
+                    <div class="d-flex justify-content-between">
+                        <h5>Bootstrap</h5>
+                        <span>80%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width:80%"></div>
+                    </div>
+                </div>
+
+                <div class="skill-item">
+                    <div class="d-flex justify-content-between">
+                        <h5>JavaScript</h5>
+                        <span>60%</span>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width:60%"></div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="section-padding">
+
+    <div class="container">
+
+        <div class="section-title">
+            <p>MY RECENT WORK</p>
+            <h2>My <span>Portfolio</span></h2>
+        </div>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="portfolio-card">
+
+                    <img src="image/Hero Section Portfolio.jfif"
+                        alt="Project One">
+
+                    <div class="portfolio-content">
+                        <h4>Website Design</h4>
+                        <p>Modern website design using HTML and CSS.</p>
+
+                        <a href="#contact">
+                            View Project <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="portfolio-card">
+
+                    <img src="image/Hero Section Portfolio.jfif"
+                        alt="Project Two">
+
+                    <div class="portfolio-content">
+                        <h4>Responsive Website</h4>
+                        <p>Responsive website using Bootstrap 5.</p>
+
+                        <a href="#contact">
+                            View Project <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="portfolio-card">
+
+                    <img src="image/Hero Section Portfolio.jfif"
+                        alt="Project Three">
+
+                    <div class="portfolio-content">
+                        <h4>Personal Portfolio</h4>
+                        <p>Personal portfolio website project.</p>
+
+                        <a href="#contact">
+                            View Project <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Contact Section -->
+<section id="contact" class="section-padding contact-section">
+
+    <div class="container">
+
+        <div class="section-title">
+            <p>GET IN TOUCH</p>
+            <h2>Contact <span>Me</span></h2>
+        </div>
+
+        <div class="row justify-content-center">
+
+            <div class="col-lg-8">
+
+                <div class="contact-box text-center">
+
+                    <h3>Let's Work Together!</h3>
+
+                    <p>
+                        Have a project or want to work together?
+                        Feel free to contact me.
+                    </p>
+
+                    <div class="contact-info">
+
+                        <a href="mailto:your@email.com">
+                            <i class="bi bi-envelope"></i>
+                            your@email.com
+                        </a>
+
+                    </div>
+
+                    <a href="mailto:your@email.com"
+                        class="btn btn-main mt-4">
+                        Send Me an Email
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- Footer -->
+<footer class="footer">
+
+    <div class="container text-center">
+
+        <h3>PURE<span>.</span></h3>
+
+        <p>Thank you for visiting my portfolio.</p>
+
+        <div class="footer-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <hr>
+
+        <p class="copyright">
+            &copy; 2026 Pure Portfolio. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- Bootstrap JavaScript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
-</html> 
+</html>
